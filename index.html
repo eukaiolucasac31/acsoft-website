@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>ACsoft | Alternative Creative Software Studios</title>
+  <meta name="description" content="ACsoft - Alternative Creative Software Studios. Desenvolvimento profissional de Aplicativos, Ferramentas Inteligentes, Sites (Construção, Hospedagem e Segurança) e Jogos.">
+  <meta name="keywords" content="ACsoft, desenvolvimento de apps, criação de sites, hospedagem de sites, segurança web, desenvolvimento de jogos, ferramentas de software, Kaio Lucas, Júlia Almeida">
+  <meta name="author" content="ACsoft - Alternative Creative Software Studios">
+  <meta name="theme-color" content="#2B0D1B">
+
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ACsoft | Alternative Creative Software Studios">
+  <meta property="og:description" content="Software com jeito próprio. Desenvolvimento de Apps, Sites, Ferramentas e Jogos.">
+  <meta property="og:image" content="Logo ACsoft-png/09-card-social.svg">
+
+  <!-- Favicon Oficial com 03-icone-app.svg -->
+  <link rel="icon" type="image/svg+xml" href="Logo ACsoft-png/03-icone-app.svg">
+  <link rel="apple-touch-icon" href="Logo ACsoft-png/03-icone-app.svg">
+
+  <!-- Fontes do Google: Playfair Display / Georgia Serif + Inter / Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Ícones Phosphor/Lucide via CDN para micro-interações -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+
+  <!-- Barra de Notificação Superior / Brand Statement -->
+  <aside class="top-announcement" aria-label="Aviso da Empresa">
+    <div class="container top-bar-content">
+      <span class="pulse-indicator"></span>
+      <span class="announcement-text">
+        <strong>ACsoft Studios:</strong> Transformando visão em tecnologia de alta fidelidade para web, mobile e games.
+      </span>
+      <a href="#calculadora" class="announcement-link">
+        Simule seu projeto <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Cabeçalho & Navegação Principal -->
+  <header class="site-header" id="header">
+    <nav class="nav-container container" aria-label="Navegação principal">
+      <!-- Logo Oficial com 03-icone-app.svg -->
+      <a href="#hero" class="brand-logo" aria-label="ACsoft Página Inicial">
+        <img src="Logo ACsoft-png/03-icone-app.svg" alt="Ícone ACsoft" class="brand-icon" width="46" height="46">
+        <div class="brand-text">
+          <span class="brand-name"><span class="highlight-a">A</span><span class="highlight-c">C</span><span class="brand-soft">soft</span></span>
+          <span class="brand-tagline">Alternative · Creative</span>
+        </div>
+      </a>
+
+      <!-- Menu Desktop -->
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="#hero" class="nav-link active">Início</a></li>
+        <li class="nav-item"><a href="#sobre" class="nav-link">A Marca</a></li>
+        <li class="nav-item dropdown">
+          <a href="#servicos" class="nav-link">Serviços <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#servico-apps"><i class="fa-solid fa-mobile-screen-button"></i> Aplicativos Mobile</a></li>
+            <li><a href="#servico-ferramentas"><i class="fa-solid fa-gears"></i> Ferramentas & Automação</a></li>
+            <li><a href="#solucoes-web"><i class="fa-solid fa-globe"></i> Sites, Hospedagem & Segurança</a></li>
+            <li><a href="#servico-jogos"><i class="fa-solid fa-gamepad"></i> Criação de Jogos</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="#solucoes-web" class="nav-link">Soluções Web</a></li>
+        <li class="nav-item"><a href="#fundadores" class="nav-link">Fundadores</a></li>
+        <li class="nav-item"><a href="#calculadora" class="nav-link">Orçamento</a></li>
+        <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+
+      <!-- Ações do Header -->
+      <div class="header-actions">
+        <a href="https://wa.me/5574991969827?text=Ol%C3%A1%2C%20ACsoft!%20Gostaria%20de%20conversar%20sobre%20um%20novo%20projeto." target="_blank" rel="noopener noreferrer" class="btn btn-outline-glow btn-sm">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span class="btn-text">+55 74 991969827</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menu de Navegação" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-ambient-glow glow-1"></div>
+      <div class="hero-ambient-glow glow-2"></div>
+      <div class="hero-ambient-pattern"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge animate-fade-in">
+            <span class="badge-dot"></span>
+            <span class="badge-text">ACsoft — Alternative Creative Software Studios</span>
+          </div>
+
+          <h1 class="hero-title animate-fade-in delay-1">
+            <span class="serif-title"><span class="highlight-a">A</span>lternative thinking.</span><br>
+            <span class="serif-title"><span class="highlight-c">C</span>reative code.</span><br>
+            <span class="title-sub">Software com jeito próprio.</span>
+          </h1>
+
+          <p class="hero-description animate-fade-in delay-2">
+            Criamos soluções tecnológicas que desafiam o comum. Somos especialistas no desenvolvimento de 
+            <strong>Aplicativos Nativos & Multiplataforma</strong>, <strong>Ferramentas Inteligentes</strong>, 
+            <strong>Sites Completos</strong> (Construção, Hospedagem de Alta Velocidade e Blindagem em Segurança) 
+            e <strong>Jogos Imersivos</strong>.
+          </p>
+
+          <div class="hero-cta-group animate-fade-in delay-3">
+            <a href="#calculadora" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <span>Simular Meu Projeto</span>
+            </a>
+            <a href="https://wa.me/5574991969827?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20ACsoft%20e%20gostaria%20de%20falar%20com%20os%20fundadores." target="_blank" rel="noopener noreferrer" class="btn btn-glass btn-lg">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Falar no WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Quick Founder Teaser -->
+          <div class="hero-founders-strip animate-fade-in delay-4">
+            <span class="strip-label">Liderança & Criação:</span>
+            <div class="strip-founders">
+              <button class="founder-trigger-inline" data-founder="julia" title="Clique para ver os fundadores">
+                <i class="fa-solid fa-circle-user"></i> Júlia Almeida Costa (Júlia A.R)
+              </button>
+              <span class="divider">&</span>
+              <button class="founder-trigger-inline" data-founder="kaio" title="Clique para ver os fundadores">
+                <i class="fa-solid fa-code"></i> Kaio Lucas Celestino Da Silva Reis (Kaio Lucas A.R)
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero-visual animate-fade-in delay-2">
+          <div class="hero-card-stack">
+            <!-- Glassmorphism interactive showcase card -->
+            <div class="glass-main-card">
+              <div class="card-glass-header">
+                <div class="dots-control">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <span class="card-browser-title">acsoft-studios.app</span>
+                <span class="badge-status">Online 99.9%</span>
+              </div>
+              <div class="card-glass-body">
+                <div class="brand-hero-svg-wrapper">
+                  <img src="Logo ACsoft-png/05-banner-hero.svg" alt="Banner Hero ACsoft" class="hero-svg-img" loading="eager">
+                </div>
+
+                <!-- Floating feature pills -->
+                <div class="features-pills-row">
+                  <div class="feature-mini-pill">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <span>Apps iOS & Android</span>
+                  </div>
+                  <div class="feature-mini-pill">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Sites & Segurança</span>
+                  </div>
+                  <div class="feature-mini-pill">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span>Jogos & Ferramentas</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Badge 1 -->
+            <div class="floating-badge badge-top-right">
+              <div class="badge-icon-box">
+                <img src="Logo ACsoft-png/03-icone-app.svg" alt="Ícone ACsoft" width="36" height="36">
+              </div>
+              <div class="badge-info">
+                <span class="badge-title">Design Original</span>
+                <span class="badge-subtitle">Identidade ACsoft</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge 2 -->
+            <div class="floating-badge badge-bottom-left">
+              <div class="badge-icon-box check-icon">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <div class="badge-info">
+                <span class="badge-title">Ultra Performance</span>
+                <span class="badge-subtitle">iPad, PC, Celulares & Tablets</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Metrics Bar -->
+      <div class="hero-metrics-bar">
+        <div class="container metrics-grid">
+          <div class="metric-item">
+            <span class="metric-number">100%</span>
+            <span class="metric-label">Código Autoral & Criativo</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number">4 em 1</span>
+            <span class="metric-label">Apps, Ferramentas, Sites & Jogos</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number">Zero</span>
+            <span class="metric-label">Templates Genéricos</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number">24/7</span>
+            <span class="metric-label">Compromisso com o Cliente</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE A MARCA & MANIFESTO ALT + C -->
+    <section class="about-section" id="sobre">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">A Origem e a Filosofia</span>
+          <h2 class="section-title">O que significa ser <span class="gradient-text">ACsoft</span>?</h2>
+          <p class="section-subtitle">
+            Nosso nome carrega em sua essência o que oferecemos ao mercado de tecnologia:
+            <strong>Alternativa</strong> inteligente aliada à <strong>Criatividade</strong> sem limites.
+          </p>
+        </div>
+
+        <!-- Equação Alt + C Interativa -->
+        <div class="altc-equation-card">
+          <div class="equation-row">
+            <!-- Card A: Alternative -->
+            <div class="equation-box box-a">
+              <div class="eq-letter">A</div>
+              <div class="eq-title">Alternative</div>
+              <p class="eq-desc">Outro caminho, outra solução. Fugimos do óbvio para desenhar arquiteturas eficientes, elegantes e que resolvem desafios complexos.</p>
+              <div class="eq-pill">Estratégia & Inovação</div>
+            </div>
+
+            <div class="equation-operator">+</div>
+
+            <!-- Card C: Creative -->
+            <div class="equation-box box-c">
+              <div class="eq-letter">C</div>
+              <div class="eq-title">Creative</div>
+              <p class="eq-desc">Ideias que viram código. A criatividade guia cada detalhe de interface, usabilidade, animação fluida e engenharia do software.</p>
+              <div class="eq-pill">Design & Engenharia</div>
+            </div>
+
+            <div class="equation-operator">=</div>
+
+            <!-- Card ACsoft Result -->
+            <div class="equation-box box-acsoft">
+              <div class="acsoft-logo-wrap">
+                <img src="Logo ACsoft-png/03-icone-app.svg" alt="Ícone ACsoft" class="acsoft-icon-spin" width="60" height="60">
+              </div>
+              <div class="eq-title-acsoft">ACsoft</div>
+              <p class="eq-desc"><strong>Alternative Creative Software Studios</strong>. Criamos softwares, sites e jogos que encantam e entregam valor real.</p>
+              <a href="#fundadores" class="btn btn-outline-glow btn-sm">Conhecer Fundadores</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Banner Visual de Identidade -->
+        <div class="brand-visual-showcase-grid">
+          <div class="visual-card">
+            <div class="visual-card-header">
+              <i class="fa-solid fa-palette"></i>
+              <span>Cards de Valores da Identidade</span>
+            </div>
+            <div class="visual-card-img-container">
+              <img src="Logo ACsoft-png/10-cards-valores.svg" alt="Cards de Valores ACsoft" class="responsive-img" loading="lazy">
+            </div>
+          </div>
+
+          <div class="visual-card">
+            <div class="visual-card-header">
+              <i class="fa-solid fa-keyboard"></i>
+              <span>O Conceito Alt + C</span>
+            </div>
+            <div class="visual-card-img-container">
+              <img src="Logo ACsoft-png/06-banner-altc.svg" alt="Banner Alt + C ACsoft" class="responsive-img" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <!-- Paleta de Cores Oficial -->
+        <div class="palette-interactive-section">
+          <div class="palette-header">
+            <h3>Paleta Cromática Oficial ACsoft</h3>
+            <p>Clique em qualquer cor para copiar o código HEX para sua área de transferência:</p>
+          </div>
+          <div class="palette-swatches-grid">
+            <button class="color-swatch-btn" data-color="#2B0D1B" style="--swatch-color: #2B0D1B;" title="Copiar #2B0D1B">
+              <span class="swatch-preview"></span>
+              <span class="swatch-name">Vinho Profundo</span>
+              <span class="swatch-hex">#2B0D1B</span>
+            </button>
+            <button class="color-swatch-btn" data-color="#4A1F32" style="--swatch-color: #4A1F32;" title="Copiar #4A1F32">
+              <span class="swatch-preview"></span>
+              <span class="swatch-name">Vinho Elegante</span>
+              <span class="swatch-hex">#4A1F32</span>
+            </button>
+            <button class="color-swatch-btn" data-color="#D82B67" style="--swatch-color: #D82B67;" title="Copiar #D82B67">
+              <span class="swatch-preview"></span>
+              <span class="swatch-name">Rosa Intenso</span>
+              <span class="swatch-hex">#D82B67</span>
+            </button>
+            <button class="color-swatch-btn" data-color="#FF6B9D" style="--swatch-color: #FF6B9D;" title="Copiar #FF6B9D">
+              <span class="swatch-preview"></span>
+              <span class="swatch-name">Rosa Vivo</span>
+              <span class="swatch-hex">#FF6B9D</span>
+            </button>
+            <button class="color-swatch-btn" data-color="#F29BBE" style="--swatch-color: #F29BBE;" title="Copiar #F29BBE">
+              <span class="swatch-preview"></span>
+              <span class="swatch-name">Rosa Suave</span>
+              <span class="swatch-hex">#F29BBE</span>
+            </button>
+            <button class="color-swatch-btn" data-color="#FDD3E3" style="--swatch-color: #FDD3E3;" title="Copiar #FDD3E3">
+              <span class="swatch-preview"></span>
+              <span class="swatch-name">Rosa Claro</span>
+              <span class="swatch-hex">#FDD3E3</span>
+            </button>
+            <button class="color-swatch-btn" data-color="#FCF3EC" style="--swatch-color: #FCF3EC;" title="Copiar #FCF3EC">
+              <span class="swatch-preview"></span>
+              <span class="swatch-name">Creme Quente</span>
+              <span class="swatch-hex">#FCF3EC</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSSOS 4 PILARES DE SERVIÇOS -->
+    <section class="services-section" id="servicos">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">O que construímos</span>
+          <h2 class="section-title">Especialidades da <span class="gradient-text">ACsoft</span></h2>
+          <p class="section-subtitle">
+            Do aplicativo na palma da mão até o servidor seguro na nuvem, construímos o ecossistema tecnológico completo para sua ideia.
+          </p>
+        </div>
+
+        <!-- Filtros Interativos de Serviços -->
+        <div class="services-filter-tabs">
+          <button class="filter-tab-btn active" data-filter="all">Todos os Serviços</button>
+          <button class="filter-tab-btn" data-filter="apps">Aplicativos Mobile</button>
+          <button class="filter-tab-btn" data-filter="ferramentas">Ferramentas & Automação</button>
+          <button class="filter-tab-btn" data-filter="sites">Sites & Web</button>
+          <button class="filter-tab-btn" data-filter="jogos">Jogos / Games</button>
+        </div>
+
+        <div class="services-grid">
+          <!-- SERVIÇO 1: APPS -->
+          <article class="service-card" data-category="apps" id="servico-apps">
+            <div class="service-card-glow"></div>
+            <div class="service-icon-box">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <div class="service-tag">Mobile Engineering</div>
+            <h3 class="service-title">Desenvolvimento de Aplicativos (Apps)</h3>
+            <p class="service-description">
+              Criamos aplicativos para <strong>Android</strong> e <strong>iOS (iPhone & iPad)</strong> com foco em usabilidade incomparável, arquitetura limpa, navegação fluida em 120Hz e carregamento instantâneo.
+            </p>
+            <ul class="service-feature-list">
+              <li><i class="fa-solid fa-check"></i> Aplicativos Nativos e Híbridos de Alto Desempenho</li>
+              <li><i class="fa-solid fa-check"></i> Design de Interface (UI/UX) Exclusivo e Acessível</li>
+              <li><i class="fa-solid fa-check"></i> Notificações Push, Modo Offline & Sincronização em Nuvem</li>
+              <li><i class="fa-solid fa-check"></i> Publicação & Otimização na Google Play Store e Apple App Store</li>
+            </ul>
+            <div class="service-card-footer">
+              <span class="platform-badges">
+                <span class="badge"><i class="fa-brands fa-android"></i> Android</span>
+                <span class="badge"><i class="fa-brands fa-apple"></i> iOS</span>
+                <span class="badge"><i class="fa-solid fa-tablet-screen-button"></i> iPadOS</span>
+              </span>
+              <a href="#calculadora" class="service-link">Simular App <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <!-- SERVIÇO 2: FERRAMENTAS -->
+          <article class="service-card" data-category="ferramentas" id="servico-ferramentas">
+            <div class="service-card-glow"></div>
+            <div class="service-icon-box">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <div class="service-tag">Productivity & Utilities</div>
+            <h3 class="service-title">Ferramentas & Softwares Utilitários</h3>
+            <p class="service-description">
+              Soluções sob medida para automatizar processos repetitivos, integrar sistemas, gerar inteligência através de dashboards e maximizar a produtividade do seu negócio.
+            </p>
+            <ul class="service-feature-list">
+              <li><i class="fa-solid fa-check"></i> Softwares Desktop e Web sob Demanda</li>
+              <li><i class="fa-solid fa-check"></i> Automação de Fluxos de Trabalho & Bots Inteligentes</li>
+              <li><i class="fa-solid fa-check"></i> Dashboards Financeiros, Métricas e BI em Tempo Real</li>
+              <li><i class="fa-solid fa-check"></i> Integração de APIs de Terceiros e Bancos de Dados</li>
+            </ul>
+            <div class="service-card-footer">
+              <span class="platform-badges">
+                <span class="badge"><i class="fa-solid fa-microchip"></i> Automação</span>
+                <span class="badge"><i class="fa-solid fa-chart-line"></i> Dashboards</span>
+                <span class="badge"><i class="fa-solid fa-server"></i> APIs</span>
+              </span>
+              <a href="#calculadora" class="service-link">Simular Ferramenta <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <!-- SERVIÇO 3: SITES COMPLETOS -->
+          <article class="service-card featured" data-category="sites" id="servico-sites">
+            <div class="service-card-badge">Especialidade ACsoft</div>
+            <div class="service-card-glow"></div>
+            <div class="service-icon-box">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="service-tag">Construção · Hospedagem · Segurança</div>
+            <h3 class="service-title">Sites Completos de Alta Performance</h3>
+            <p class="service-description">
+              Cuidamos de todo o ciclo de vida da sua presença digital: da concepção visual responsiva ao servidor blindado e certificado de segurança de última geração.
+            </p>
+            <ul class="service-feature-list">
+              <li><i class="fa-solid fa-check"></i> <strong>Construção:</strong> Landing pages, portais corporativos e e-commerces</li>
+              <li><i class="fa-solid fa-check"></i> <strong>Hospedagem:</strong> Servidores SSD NVMe com CDN e 99.9% de uptime</li>
+              <li><i class="fa-solid fa-check"></i> <strong>Segurança:</strong> Blindagem contra ataques DDoS, SSL/TLS e backup diário</li>
+              <li><i class="fa-solid fa-check"></i> Otimização Extrema para Mobile (Android, iPhone, iPads e PCs)</li>
+            </ul>
+            <div class="service-card-footer">
+              <span class="platform-badges">
+                <span class="badge"><i class="fa-solid fa-bolt"></i> Ultra Rápido</span>
+                <span class="badge"><i class="fa-solid fa-shield-halved"></i> Blindado</span>
+                <span class="badge"><i class="fa-solid fa-cloud"></i> Cloud Host</span>
+              </span>
+              <a href="#solucoes-web" class="service-link">Ver Soluções Web <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <!-- SERVIÇO 4: JOGOS -->
+          <article class="service-card" data-category="jogos" id="servico-jogos">
+            <div class="service-card-glow"></div>
+            <div class="service-icon-box">
+              <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <div class="service-tag">Game Design & Development</div>
+            <h3 class="service-title">Criação de Jogos (Games Studio)</h3>
+            <p class="service-description">
+              Damos vida a ideias inovadoras no universo dos jogos. Criamos experiências 2D e 3D envolventes, mecânicas criativas, arte personalizada e jogabilidade viciante para todas as telas.
+            </p>
+            <ul class="service-feature-list">
+              <li><i class="fa-solid fa-check"></i> Jogos para Mobile (Android & iOS), Web e Computador (PC)</li>
+              <li><i class="fa-solid fa-check"></i> Mecânicas Originais, Level Design e Roteirização Criativa</li>
+              <li><i class="fa-solid fa-check"></i> Efeitos Visuais (VFX), Áudio Imersivo e Animações 60 FPS</li>
+              <li><i class="fa-solid fa-check"></i> Advergames para Marcas e Campanhas Promocionais</li>
+            </ul>
+            <div class="service-card-footer">
+              <span class="platform-badges">
+                <span class="badge"><i class="fa-solid fa-dragon"></i> 2D & 3D</span>
+                <span class="badge"><i class="fa-solid fa-vr-cardboard"></i> Imersão</span>
+                <span class="badge"><i class="fa-solid fa-trophy"></i> Gameplay</span>
+              </span>
+              <a href="#calculadora" class="service-link">Simular Game <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTAQUE ESPECÍFICO: ECOSSISTEMA WEB COMPLETO (HOSPEDAGEM, CONSTRUÇÃO E SEGURANÇA) -->
+    <section class="web-solutions-section" id="solucoes-web">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Tríplice Aliança Digital</span>
+          <h2 class="section-title">Sites: <span class="gradient-text">Construção, Hospedagem & Segurança</span></h2>
+          <p class="section-subtitle">
+            Um site não basta ser bonito: ele precisa carregar instantaneamente, nunca cair e proteger as informações dos seus clientes. Na ACsoft, integramos os três pilares indispensáveis.
+          </p>
+        </div>
+
+        <div class="web-pillars-grid">
+          <!-- Pilar 1: Construção -->
+          <div class="pillar-card">
+            <div class="pillar-num">01</div>
+            <div class="pillar-icon"><i class="fa-solid fa-code"></i></div>
+            <h3 class="pillar-title">Construção de Sites</h3>
+            <p class="pillar-desc">
+              Desenvolvimento front-end e back-end sob medida. Código limpo, sem temas pesados ou dependências desnecessárias.
+            </p>
+            <div class="pillar-specs">
+              <div class="spec-row"><i class="fa-solid fa-check"></i> Design 100% Responsivo (Celular a 4K)</div>
+              <div class="spec-row"><i class="fa-solid fa-check"></i> Nota 95+ no Google PageSpeed</div>
+              <div class="spec-row"><i class="fa-solid fa-check"></i> SEO Técnico para posicionamento orgânico</div>
+              <div class="spec-row"><i class="fa-solid fa-check"></i> Animações suaves em CSS & JavaScript puro</div>
+            </div>
+          </div>
+
+          <!-- Pilar 2: Hospedagem -->
+          <div class="pillar-card highlight-border">
+            <div class="pillar-num">02</div>
+            <div class="pillar-icon"><i class="fa-solid fa-server"></i></div>
+            <h3 class="pillar-title">Hospedagem Gerenciada</h3>
+            <p class="pillar-desc">
+              Infraestrutura em nuvem moderna, otimizada especificamente para as soluções que construímos, garantindo estabilidade máxima.
+            </p>
+            <div class="pillar-specs">
+              <div class="spec-row"><i class="fa-solid fa-check"></i> 99.9% Uptime garantido em contrato</div>
+              <div class="spec-row"><i class="fa-solid fa-check"></i> Discos SSD NVMe de ultra velocidade</div>
+              <div class="spec-row"><i class="fa-solid fa-check"></i> CDN Global com nós no Brasil</div>
+              <div class="spec-row"><i class="fa-solid fa-check"></i> E-mails corporativos profissionais inclusos</div>
+            </div>
+          </div>
+
+          <!-- Pilar 3: Segurança -->
+          <div class="pillar-card">
+            <div class="pillar-num">03</div>
+            <div class="pillar-icon"><i class="fa-solid fa-lock"></i></div>
+            <h3 class="pillar-title">Segurança Cibernética</h3>
+            <p class="pillar-desc">
+              Proteção multicamadas contra ameaças virtuais, invasões, sequestro de dados e fraudes online.
+            </p>
+            <div class="pillar-specs">
+              <div class="spec-row"><i class="fa-solid fa-check"></i> Certificados SSL/TLS com renovação automática</div>
+              <div class="spec-row"><i class="fa-solid fa-check"></i> Firewall de Aplicação Web (WAF) contra DDoS</div>
+              <div class="spec-row"><i class="fa-solid fa-check"></i> Backups diários em local redundante</div>
+              <div class="spec-row"><i class="fa-solid fa-check"></i> Conformidade estrita com a LGPD</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Banner Comparativo de Responsividade -->
+        <div class="responsive-devices-banner">
+          <div class="devices-banner-content">
+            <div class="badge-mini"><i class="fa-solid fa-display"></i> Experiência Multiplataforma</div>
+            <h3>Perfeição Visual em Qualquer Dispositivo</h3>
+            <p>
+              Seus clientes acessam por celulares Android, iPhones, iPads, notebooks ou monitores ultrawide.
+              A ACsoft garante uma navegação consistente, botões com tamanho de toque ideal, tipografia fluida e zero distorções visuais.
+            </p>
+            <div class="devices-badges-list">
+              <span class="device-pill"><i class="fa-brands fa-android"></i> Android (Celulares & Tablets)</span>
+              <span class="device-pill"><i class="fa-brands fa-apple"></i> iOS (iPhone & iPad)</span>
+              <span class="device-pill"><i class="fa-solid fa-desktop"></i> PCs & Desktops</span>
+              <span class="device-pill"><i class="fa-solid fa-laptop"></i> Laptops & MacBooks</span>
+            </div>
+          </div>
+          <div class="devices-banner-visual">
+            <div class="mockup-frame">
+              <div class="mockup-header">
+                <span class="mockup-circle"></span>
+                <span class="mockup-circle"></span>
+                <span class="mockup-circle"></span>
+              </div>
+              <div class="mockup-screen">
+                <img src="Logo ACsoft-png/01-logo-escuro.svg" alt="Logo ACsoft Escuro" class="mockup-logo-img">
+                <div class="mockup-simulation">
+                  <div class="mockup-line w-80"></div>
+                  <div class="mockup-line w-60"></div>
+                  <div class="mockup-box-row">
+                    <div class="mockup-box"></div>
+                    <div class="mockup-box"></div>
+                    <div class="mockup-box"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO FUNDADORES (REQUISITO FUNDAMENTAL INTERATIVO) -->
+    <section class="founders-section" id="fundadores">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Liderança & Propósito</span>
+          <h2 class="section-title">Conheça Quem Faz a <span class="gradient-text">ACsoft</span></h2>
+          <p class="section-subtitle">
+            A empresa pertence a profissionais dedicados que unem criatividade apurada e sólida engenharia de software para construir soluções de impacto.
+          </p>
+          <div class="interactive-instruction-banner">
+            <i class="fa-solid fa-hand-pointer pulse-icon"></i>
+            <span><strong>Interaja:</strong> Clique no nome de <strong>Júlia Almeida R</strong> ou <strong>Kaio Lucas A.R</strong> para revelar os detalhes dos fundadores!</span>
+          </div>
+        </div>
+
+        <!-- Banner com a Revelação Solicitada pelo Usuário -->
+        <div class="founders-reveal-card" id="foundersRevealBox">
+          <div class="reveal-badge">
+            <i class="fa-solid fa-award"></i>
+            <span>Proprietários & Direção Executiva ACsoft</span>
+          </div>
+          <!-- O texto exato exigido: "Kaio Lucas Almeida Reis, Júlia Almeida Reis" -->
+          <div class="revealed-names-highlight" id="revealedNamesText">
+            <span class="name-chip chip-kaio">Kaio Lucas Almeida Reis</span>
+            <span class="name-ampersand">&</span>
+            <span class="name-chip chip-julia">Júlia Almeida Reis</span>
+          </div>
+          <p class="reveal-subtext">
+            "Unindo a paixão por design intuitivo e arquitetura robusta de sistemas, lideramos a ACsoft Studios com transparência, inovação constante e proximidade com cada parceiro de negócios."
+          </p>
+        </div>
+
+        <div class="founders-cards-grid">
+          <!-- CARD JÚLIA ALMEIDA COSTA -->
+          <div class="founder-card" id="cardFounderJulia">
+            <div class="founder-photo-box">
+              <div class="founder-avatar-wrap">
+                <img src="Logo ACsoft-png/07-avatar-redondo.svg" alt="Avatar Júlia A.R" class="founder-avatar-img">
+              </div>
+              <span class="founder-status-badge">Co-Fundadora</span>
+            </div>
+            <div class="founder-info">
+              <!-- Requisito interativo: clicar no nome -->
+              <button class="founder-name-button" id="btnJuliaName" title="Clique para exibir os fundadores completos">
+                <span class="primary-name">Júlia Almeida Costa</span>
+                <span class="alias-name">(Júlia A.R)</span>
+                <i class="fa-solid fa-arrow-pointer click-hint"></i>
+              </button>
+              <div class="founder-title">Diretoria Criativa & Experiência do Usuário (UX/UI)</div>
+              <p class="founder-bio">
+                Responsável pela direção de arte, identidade visual, interfaces interativas e coerência estética dos produtos da ACsoft. Especialista em traduzir ideias complexas em experiências visuais simples, marcantes e confortáveis para o usuário.
+              </p>
+              <div class="founder-skills-pills">
+                <span class="pill">Design Criativo</span>
+                <span class="pill">UI/UX Mobile</span>
+                <span class="pill">Identidade Visual</span>
+                <span class="pill">Direção de Arte</span>
+              </div>
+              <div class="founder-contact-actions">
+                <a href="https://wa.me/5574991969827?text=Ol%C3%A1%2C%20J%C3%BAlia%20A.R!%20Gostaria%20de%20conversar%20sobre%20design%20e%20projetos%20na%20ACsoft." target="_blank" rel="noopener noreferrer" class="btn btn-glass btn-sm">
+                  <i class="fa-brands fa-whatsapp"></i> Falar com Júlia
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD KAIO LUCAS CELESTINO DA SILVA REIS -->
+          <div class="founder-card" id="cardFounderKaio">
+            <div class="founder-photo-box">
+              <div class="founder-avatar-wrap">
+                <img src="Logo ACsoft-png/03-icone-app.svg" alt="Avatar Kaio Lucas A.R" class="founder-avatar-img">
+              </div>
+              <span class="founder-status-badge">Co-Fundador</span>
+            </div>
+            <div class="founder-info">
+              <!-- Requisito interativo: clicar no nome -->
+              <button class="founder-name-button" id="btnKaioName" title="Clique para exibir os fundadores completos">
+                <span class="primary-name">Kaio Lucas Celestino Da Silva Reis</span>
+                <span class="alias-name">(Kaio Lucas A.R)</span>
+                <i class="fa-solid fa-arrow-pointer click-hint"></i>
+              </button>
+              <div class="founder-title">Arquiteto de Software & Engenharia de Sistemas</div>
+              <p class="founder-bio">
+                Lidera o desenvolvimento técnico, arquitetura de nuvem, segurança cibernética e infraestrutura dos aplicativos, ferramentas e jogos da ACsoft. Focado em código limpo, altíssimo desempenho e estabilidade de longo prazo.
+              </p>
+              <div class="founder-skills-pills">
+                <span class="pill">Engenharia de Software</span>
+                <span class="pill">Apps iOS & Android</span>
+                <span class="pill">Cloud & Segurança</span>
+                <span class="pill">Game Dev</span>
+              </div>
+              <div class="founder-contact-actions">
+                <a href="https://wa.me/5574991969827?text=Ol%C3%A1%2C%20Kaio%20Lucas%20A.R!%20Gostaria%20de%20conversar%20sobre%20desenvolvimento%20de%20software%20na%20ACsoft." target="_blank" rel="noopener noreferrer" class="btn btn-glass btn-sm">
+                  <i class="fa-brands fa-whatsapp"></i> Falar com Kaio
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Banner com Social Card Oficial -->
+        <div class="founder-social-banner">
+          <div class="social-banner-header">
+            <h4>ACSOFT · Alternativo por escolha. Criativo por natureza.</h4>
+          </div>
+          <div class="social-banner-media">
+            <img src="Logo ACsoft-png/09-card-social.svg" alt="Card Social ACsoft" class="responsive-img" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALCULADORA / SIMULADOR INTERATIVO DE ORÇAMENTO -->
+    <section class="calculator-section" id="calculadora">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Estimativa Rápida & Transparente</span>
+          <h2 class="section-title">Simule seu Projeto com a <span class="gradient-text">ACsoft</span></h2>
+          <p class="section-subtitle">
+            Selecione o tipo de solução que você precisa, marque as funcionalidades essenciais e obtenha uma estimativa instantânea pronta para envio direto aos fundadores via WhatsApp!
+          </p>
+        </div>
+
+        <div class="calculator-box">
+          <form id="projectCalculatorForm" onsubmit="return false;">
+            <!-- Passo 1: Tipo de Projeto -->
+            <div class="calc-step">
+              <label class="calc-step-label">1. Qual tipo de solução você deseja construir?</label>
+              <div class="calc-options-grid">
+                <label class="calc-option-card">
+                  <input type="radio" name="projectType" value="app" checked>
+                  <div class="option-content">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <span class="opt-name">Aplicativo Mobile</span>
+                    <span class="opt-sub">iOS & Android</span>
+                  </div>
+                </label>
+
+                <label class="calc-option-card">
+                  <input type="radio" name="projectType" value="site">
+                  <div class="option-content">
+                    <i class="fa-solid fa-globe"></i>
+                    <span class="opt-name">Site Completo</span>
+                    <span class="opt-sub">Construção + Hospedagem + Segurança</span>
+                  </div>
+                </label>
+
+                <label class="calc-option-card">
+                  <input type="radio" name="projectType" value="ferramenta">
+                  <div class="option-content">
+                    <i class="fa-solid fa-gears"></i>
+                    <span class="opt-name">Ferramenta Sob Medida</span>
+                    <span class="opt-sub">Automação & Dashboard</span>
+                  </div>
+                </label>
+
+                <label class="calc-option-card">
+                  <input type="radio" name="projectType" value="jogo">
+                  <div class="option-content">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span class="opt-name">Jogo (Game Studio)</span>
+                    <span class="opt-sub">2D/3D Mobile ou PC</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Passo 2: Funcionalidades Desejadas -->
+            <div class="calc-step">
+              <label class="calc-step-label">2. Quais recursos seu projeto precisará?</label>
+              <div class="calc-features-grid">
+                <label class="feature-checkbox-card">
+                  <input type="checkbox" name="feature" value="design" checked>
+                  <span class="cb-custom"></span>
+                  <div class="cb-label">
+                    <strong>Design Exclusivo & UI/UX</strong>
+                    <span>Telas personalizadas e protótipo interativo</span>
+                  </div>
+                </label>
+
+                <label class="feature-checkbox-card">
+                  <input type="checkbox" name="feature" value="auth" checked>
+                  <span class="cb-custom"></span>
+                  <div class="cb-label">
+                    <strong>Autenticação & Login de Usuários</strong>
+                    <span>Google, Apple, e-mail e recuperação de senha</span>
+                  </div>
+                </label>
+
+                <label class="feature-checkbox-card">
+                  <input type="checkbox" name="feature" value="banco">
+                  <span class="cb-custom"></span>
+                  <div class="cb-label">
+                    <strong>Banco de Dados & API na Nuvem</strong>
+                    <span>Armazenamento dinâmico e seguro</span>
+                  </div>
+                </label>
+
+                <label class="feature-checkbox-card">
+                  <input type="checkbox" name="feature" value="pagamento">
+                  <span class="cb-custom"></span>
+                  <div class="cb-label">
+                    <strong>Gateway de Pagamentos / Pix</strong>
+                    <span>Cobrança integrada com confirmação automática</span>
+                  </div>
+                </label>
+
+                <label class="feature-checkbox-card">
+                  <input type="checkbox" name="feature" value="hospedagem">
+                  <span class="cb-custom"></span>
+                  <div class="cb-label">
+                    <strong>Hospedagem & Blindagem de Segurança</strong>
+                    <span>SSL, backups diários e firewall contra ataques</span>
+                  </div>
+                </label>
+
+                <label class="feature-checkbox-card">
+                  <input type="checkbox" name="feature" value="painel">
+                  <span class="cb-custom"></span>
+                  <div class="cb-label">
+                    <strong>Painel Administrativo Web (Admin)</strong>
+                    <span>Para você gerenciar conteúdos e usuários</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Passo 3: Prazo Desejado -->
+            <div class="calc-step">
+              <label class="calc-step-label">3. Qual a sua urgência para o lançamento?</label>
+              <div class="timeline-slider-wrap">
+                <div class="urgency-options">
+                  <label class="urgency-radio">
+                    <input type="radio" name="urgency" value="normal" checked>
+                    <span>Padrão (4 a 8 semanas)</span>
+                  </label>
+                  <label class="urgency-radio">
+                    <input type="radio" name="urgency" value="agil">
+                    <span>Ágil / Acelerado (2 a 4 semanas)</span>
+                  </label>
+                  <label class="urgency-radio">
+                    <input type="radio" name="urgency" value="expresso">
+                    <span>Lançamento Prioritário (Imediato)</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Resultado Interativo -->
+            <div class="calc-result-box" id="calcResultDisplay">
+              <div class="result-summary">
+                <span class="res-tag">Resumo da Estimativa</span>
+                <div class="res-title" id="resProjectName">Aplicativo Mobile com Design + Login</div>
+                <div class="res-timeline" id="resTimelineEst">Prazo estimado: <strong>4 a 6 semanas</strong></div>
+              </div>
+
+              <div class="result-action">
+                <button type="button" class="btn btn-primary btn-lg" id="btnSendQuoteWhatsapp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <span>Enviar para WhatsApp dos Fundadores</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA DE IDENTIDADE VISUAL & ASSETS OFICIAIS -->
+    <section class="brand-gallery-section" id="identidade">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Brand Book & Ativos</span>
+          <h2 class="section-title">Galeria da Identidade Visual <span class="gradient-text">ACsoft</span></h2>
+          <p class="section-subtitle">
+            Conheça todos os elementos gráficos que constroem a marca ACsoft. Cada curva, cor e proporção foi pensada para transmitir modernidade, sofisticação e criatividade técnica.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Ícone Principal (03-icone-app.svg) -->
+          <div class="gallery-item-card primary-asset">
+            <div class="gallery-badge">Ícone Oficial do App</div>
+            <div class="asset-preview-box">
+              <img src="Logo ACsoft-png/03-icone-app.svg" alt="03-icone-app.svg - Ícone Oficial ACsoft" class="asset-img" loading="lazy">
+            </div>
+            <div class="asset-info">
+              <div class="asset-name">03-icone-app.svg</div>
+              <div class="asset-desc">Símbolo mestre da marca. O monograma "AC" unificado com gradiente vinho, magenta e rosa suave sobre fundo escuro curvado.</div>
+              <a href="Logo ACsoft-png/03-icone-app.svg" target="_blank" download="03-icone-app.svg" class="btn btn-glass btn-xs"><i class="fa-solid fa-download"></i> Baixar SVG</a>
+            </div>
+          </div>
+
+          <!-- Logo Escuro (01-logo-escuro.svg) -->
+          <div class="gallery-item-card">
+            <div class="gallery-badge">Logo Horizontal Escuro</div>
+            <div class="asset-preview-box">
+              <img src="Logo ACsoft-png/01-logo-escuro.svg" alt="01-logo-escuro.svg" class="asset-img" loading="lazy">
+            </div>
+            <div class="asset-info">
+              <div class="asset-name">01-logo-escuro.svg</div>
+              <div class="asset-desc">Versão principal para fundos escuros. Ícone + tipografia Georgia com "soft" em itálico e subtítulo ALTERNATIVE · CREATIVE.</div>
+              <a href="Logo ACsoft-png/01-logo-escuro.svg" target="_blank" download="01-logo-escuro.svg" class="btn btn-glass btn-xs"><i class="fa-solid fa-download"></i> Baixar SVG</a>
+            </div>
+          </div>
+
+          <!-- Logo Claro (02-logo-claro.svg) -->
+          <div class="gallery-item-card">
+            <div class="gallery-badge">Logo Horizontal Claro</div>
+            <div class="asset-preview-box light-bg">
+              <img src="Logo ACsoft-png/02-logo-claro.svg" alt="02-logo-claro.svg" class="asset-img" loading="lazy">
+            </div>
+            <div class="asset-info">
+              <div class="asset-name">02-logo-claro.svg</div>
+              <div class="asset-desc">Versão para impressos, documentos e fundos creme claro (#FCF3EC). Máximo contraste e legibilidade editorial.</div>
+              <a href="Logo ACsoft-png/02-logo-claro.svg" target="_blank" download="02-logo-claro.svg" class="btn btn-glass btn-xs"><i class="fa-solid fa-download"></i> Baixar SVG</a>
+            </div>
+          </div>
+
+          <!-- Manifesto Palavras (04-logo-palavras.svg) -->
+          <div class="gallery-item-card">
+            <div class="gallery-badge">Manifesto Editorial</div>
+            <div class="asset-preview-box">
+              <img src="Logo ACsoft-png/04-logo-palavras.svg" alt="04-logo-palavras.svg" class="asset-img" loading="lazy">
+            </div>
+            <div class="asset-info">
+              <div class="asset-name">04-logo-palavras.svg</div>
+              <div class="asset-desc">Composição tipográfica em grande formato: Alternative, Creative, soft. Perfeita para pôsteres e telas de abertura.</div>
+              <a href="Logo ACsoft-png/04-logo-palavras.svg" target="_blank" download="04-logo-palavras.svg" class="btn btn-glass btn-xs"><i class="fa-solid fa-download"></i> Baixar SVG</a>
+            </div>
+          </div>
+
+          <!-- Avatar Redondo (07-avatar-redondo.svg) -->
+          <div class="gallery-item-card">
+            <div class="gallery-badge">Avatar Circular</div>
+            <div class="asset-preview-box">
+              <img src="Logo ACsoft-png/07-avatar-redondo.svg" alt="07-avatar-redondo.svg" class="asset-img" loading="lazy">
+            </div>
+            <div class="asset-info">
+              <div class="asset-name">07-avatar-redondo.svg</div>
+              <div class="asset-desc">Desenvolvido sob medida para redes sociais (Instagram, GitHub, LinkedIn, WhatsApp Business e Telegram).</div>
+              <a href="Logo ACsoft-png/07-avatar-redondo.svg" target="_blank" download="07-avatar-redondo.svg" class="btn btn-glass btn-xs"><i class="fa-solid fa-download"></i> Baixar SVG</a>
+            </div>
+          </div>
+
+          <!-- Padrão Geométrico (08-padrao.svg) -->
+          <div class="gallery-item-card">
+            <div class="gallery-badge">Pattern & Textura</div>
+            <div class="asset-preview-box pattern-bg">
+              <img src="Logo ACsoft-png/08-padrao.svg" alt="08-padrao.svg" class="asset-img" loading="lazy">
+            </div>
+            <div class="asset-info">
+              <div class="asset-name">08-padrao.svg</div>
+              <div class="asset-desc">Padrão modular infinito do símbolo AC com pontos sutis em rosa suave sobre vinho profundo. Cria profundidade ambiental.</div>
+              <a href="Logo ACsoft-png/08-padrao.svg" target="_blank" download="08-padrao.svg" class="btn btn-glass btn-xs"><i class="fa-solid fa-download"></i> Baixar SVG</a>
+            </div>
+          </div>
+
+          <!-- Paleta de Cores Oficial (11-paleta.svg) -->
+          <div class="gallery-item-card">
+            <div class="gallery-badge">Cartela de Cores</div>
+            <div class="asset-preview-box light-bg">
+              <img src="Logo ACsoft-png/11-paleta.svg" alt="11-paleta.svg" class="asset-img" loading="lazy">
+            </div>
+            <div class="asset-info">
+              <div class="asset-name">11-paleta.svg</div>
+              <div class="asset-desc">Guia técnico da paleta de cores oficial com códigos HEX e tonalidades do Vinho Profundo ao Rosa e Creme.</div>
+              <a href="Logo ACsoft-png/11-paleta.svg" target="_blank" download="11-paleta.svg" class="btn btn-glass btn-xs"><i class="fa-solid fa-download"></i> Baixar SVG</a>
+            </div>
+          </div>
+
+          <!-- Favicon 64px (12-favicon.svg) -->
+          <div class="gallery-item-card">
+            <div class="gallery-badge">Micro-ícone Favicon</div>
+            <div class="asset-preview-box">
+              <img src="Logo ACsoft-png/12-favicon.svg" alt="12-favicon.svg" class="asset-img" style="max-height: 64px;" loading="lazy">
+            </div>
+            <div class="asset-info">
+              <div class="asset-name">12-favicon.svg</div>
+              <div class="asset-desc">Ícone 64x64 ultra otimizado para abas de navegadores, favoritos, web bookmarks e notificações PWA.</div>
+              <a href="Logo ACsoft-png/12-favicon.svg" target="_blank" download="12-favicon.svg" class="btn btn-glass btn-xs"><i class="fa-solid fa-download"></i> Baixar SVG</a>
+            </div>
+          </div>
+
+          <!-- Ícone PNG Alta Resolução -->
+          <div class="gallery-item-card">
+            <div class="gallery-badge">Raster HD (PNG)</div>
+            <div class="asset-preview-box">
+              <img src="Logo ACsoft-png/Ícone ACsoft.png" alt="Ícone ACsoft PNG" class="asset-img" loading="lazy">
+            </div>
+            <div class="asset-info">
+              <div class="asset-name">Ícone ACsoft.png</div>
+              <div class="asset-desc">Versão raster em altíssima definição (PNG transparente) para aplicações mobile, marketing e mídias impressas.</div>
+              <a href="Logo ACsoft-png/Ícone ACsoft.png" target="_blank" download="Ícone ACsoft.png" class="btn btn-glass btn-xs"><i class="fa-solid fa-download"></i> Baixar PNG</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ (PERGUNTAS FREQUENTES) -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Tire Suas Dúvidas</span>
+          <h2 class="section-title">Perguntas Frequentes sobre a <span class="gradient-text">ACsoft</span></h2>
+          <p class="section-subtitle">
+            Transparência do primeiro contato até a entrega final e manutenção contínua.
+          </p>
+        </div>
+
+        <div class="faq-accordion-container">
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Como funciona o processo de criação de um site ou aplicativo?</span>
+              <i class="fa-solid fa-plus faq-toggle-icon"></i>
+            </button>
+            <div class="faq-answer-panel">
+              <p>
+                Iniciamos com uma reunião de alinhamento direto com os fundadores (Júlia e Kaio). Mapeamos seus objetivos, desenhamos o protótipo navegável (UI/UX), validamos com você e partimos para a codificação de alta performance com testes rigorosos antes da publicação nas lojas ou na nuvem.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>A ACsoft também cuida da hospedagem e da segurança do meu site?</span>
+              <i class="fa-solid fa-plus faq-toggle-icon"></i>
+            </button>
+            <div class="faq-answer-panel">
+              <p>
+                Sim! Esse é um dos nossos grandes diferenciais: não deixamos você desamparado após o desenvolvimento. Fornecemos infraestrutura cloud em servidores de alta velocidade (SSD NVMe), certificados SSL automáticos, backups diários e monitoramento contínuo contra ataques cibernéticos.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>O site e os aplicativos funcionarão bem em qualquer celular ou computador?</span>
+              <i class="fa-solid fa-plus faq-toggle-icon"></i>
+            </button>
+            <div class="faq-answer-panel">
+              <p>
+                Com certeza. Seguimos rigorosamente a metodologia <em>Mobile-First</em> e <em>Responsive Web Design</em>. Nossas interfaces são otimizadas para celulares Android, iPhones (incluindo as margens de segurança e notch), iPads, tablets, notebooks e computadores de alta resolução.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Como é o desenvolvimento de jogos (games) pela ACsoft?</span>
+              <i class="fa-solid fa-plus faq-toggle-icon"></i>
+            </button>
+            <div class="faq-answer-panel">
+              <p>
+                Atuamos na concepção de jogos casuais, autorais e corporativos (advergames). Desenvolvemos a mecânica de jogo (gameplay), arte gráfica, efeitos sonoros e garantimos taxa de quadros estável em 60 FPS nos dispositivos móveis e navegadores web.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Como posso entrar em contato direto com a equipe?</span>
+              <i class="fa-solid fa-plus faq-toggle-icon"></i>
+            </button>
+            <div class="faq-answer-panel">
+              <p>
+                Você pode falar diretamente com nossa equipe e fundadores pelo WhatsApp oficial <strong>+55 74 991969827</strong> ou pelo e-mail <strong>eukaioluccas31@gmail.com</strong>. Respondemos rapidamente com atendimento humanizado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO & FORMULÁRIO -->
+    <section class="contact-section" id="contato">
+      <div class="container">
+        <div class="contact-card-wrapper">
+          <div class="contact-info-column">
+            <span class="section-tag">Vamos Construir Juntos</span>
+            <h2 class="contact-title">Dê o próximo passo com a <span class="gradient-text">ACsoft</span></h2>
+            <p class="contact-desc">
+              Tem uma ideia para um app inovador? Precisa de um site veloz com hospedagem blindada, uma ferramenta personalizada ou um jogo envolvente? Estamos prontos para atender você.
+            </p>
+
+            <div class="contact-details-list">
+              <!-- WhatsApp -->
+              <a href="https://wa.me/5574991969827?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20ACsoft." target="_blank" rel="noopener noreferrer" class="contact-item-row">
+                <div class="contact-icon-bubble whatsapp-bubble">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="contact-item-text">
+                  <span class="label">Telefone & WhatsApp Direto</span>
+                  <span class="value">+55 74 991969827</span>
+                </div>
+                <span class="item-action-badge">Iniciar Conversa</span>
+              </a>
+
+              <!-- E-mail -->
+              <a href="mailto:eukaioluccas31@gmail.com" class="contact-item-row">
+                <div class="contact-icon-bubble email-bubble">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-item-text">
+                  <span class="label">E-mail de Contato Oficial</span>
+                  <span class="value">eukaioluccas31@gmail.com</span>
+                </div>
+                <button type="button" class="btn-copy-email" id="btnCopyEmail" title="Copiar E-mail">
+                  <i class="fa-solid fa-copy"></i>
+                </button>
+              </a>
+
+              <!-- Localização e Atendimento -->
+              <div class="contact-item-row">
+                <div class="contact-icon-bubble loc-bubble">
+                  <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="contact-item-text">
+                  <span class="label">Atendimento</span>
+                  <span class="value">Brasil & Global (100% Digital e Remoto)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Founders signature card -->
+            <div class="founders-mini-signature">
+              <img src="Logo ACsoft-png/03-icone-app.svg" alt="ACsoft" width="34" height="34">
+              <div class="sig-text">
+                <strong>ACsoft — Alternative Creative Software Studios</strong>
+                <span>Júlia Almeida Costa (Júlia A.R) & Kaio Lucas Celestino Da Silva Reis (Kaio Lucas A.R)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulário de Mensagem Direta -->
+          <div class="contact-form-column">
+            <div class="form-glass-card">
+              <h3 class="form-title">Envie uma Mensagem</h3>
+              <p class="form-subtitle">Preencha os campos abaixo para iniciar seu projeto com a ACsoft:</p>
+
+              <form id="directContactForm" class="styled-form">
+                <div class="form-group">
+                  <label for="clientName">Seu Nome / Empresa *</label>
+                  <input type="text" id="clientName" name="name" placeholder="Ex: Maria Silva" required>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="clientPhone">WhatsApp / Telefone *</label>
+                    <input type="tel" id="clientPhone" name="phone" placeholder="(XX) 9XXXX-XXXX" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="clientEmail">E-mail de Contato *</label>
+                    <input type="email" id="clientEmail" name="email" placeholder="seuemail@exemplo.com" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="projectInterest">Interesse Principal *</label>
+                  <select id="projectInterest" name="interest" required>
+                    <option value="" disabled selected>Selecione uma área...</option>
+                    <option value="Aplicativo Mobile (Android/iOS)">Aplicativo Mobile (Android/iOS)</option>
+                    <option value="Site Completo (Construção + Hospedagem + Segurança)">Site Completo (Construção, Hospedagem & Segurança)</option>
+                    <option value="Ferramenta Personalizada / Automação">Ferramenta Personalizada / Automação</option>
+                    <option value="Criação de Jogo (Game)">Criação de Jogo (Game)</option>
+                    <option value="Outro Projeto Especial">Outro Projeto Especial</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="clientMessage">Conte um pouco sobre a sua ideia *</label>
+                  <textarea id="clientMessage" name="message" rows="4" placeholder="Descreva o que deseja criar, funcionalidades essenciais ou público-alvo..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block btn-lg" id="btnSubmitContact">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  <span>Enviar Solicitação Direta</span>
+                </button>
+
+                <div class="form-feedback" id="formFeedback"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ COMPLETO -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-top-grid">
+        <!-- Coluna da Marca -->
+        <div class="footer-brand-col">
+          <a href="#hero" class="footer-brand-logo">
+            <img src="Logo ACsoft-png/01-logo-escuro.svg" alt="Logo ACsoft" class="footer-logo-svg">
+          </a>
+          <p class="footer-bio">
+            <strong>ACsoft</strong> — Alternative Creative Software Studios. Criando tecnologia com jeito próprio para transformar negócios e experiências através de aplicativos, sites, ferramentas e jogos.
+          </p>
+          <div class="footer-slogan">
+            <em>"Alternativo por escolha. Criativo por natureza."</em>
+          </div>
+        </div>
+
+        <!-- Coluna Serviços -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Serviços & Soluções</h4>
+          <ul class="footer-links-list">
+            <li><a href="#servico-apps"><i class="fa-solid fa-chevron-right"></i> Apps Android & iOS</a></li>
+            <li><a href="#servico-ferramentas"><i class="fa-solid fa-chevron-right"></i> Ferramentas & Automações</a></li>
+            <li><a href="#solucoes-web"><i class="fa-solid fa-chevron-right"></i> Construção de Sites</a></li>
+            <li><a href="#solucoes-web"><i class="fa-solid fa-chevron-right"></i> Hospedagem SSD NVMe</a></li>
+            <li><a href="#solucoes-web"><i class="fa-solid fa-chevron-right"></i> Segurança Cibernética & WAF</a></li>
+            <li><a href="#servico-jogos"><i class="fa-solid fa-chevron-right"></i> Jogos 2D & 3D</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna Institucional & Fundadores -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Liderança & Conceito</h4>
+          <ul class="footer-links-list">
+            <li><a href="#sobre"><i class="fa-solid fa-chevron-right"></i> O Conceito Alt + C</a></li>
+            <li><a href="#fundadores" class="founder-trigger-inline" data-founder="julia"><i class="fa-solid fa-chevron-right"></i> Júlia Almeida Costa (Júlia A.R)</a></li>
+            <li><a href="#fundadores" class="founder-trigger-inline" data-founder="kaio"><i class="fa-solid fa-chevron-right"></i> Kaio Lucas Celestino Da Silva Reis (Kaio Lucas A.R)</a></li>
+            <li><a href="#identidade"><i class="fa-solid fa-chevron-right"></i> Manual de Marca</a></li>
+            <li><a href="#calculadora"><i class="fa-solid fa-chevron-right"></i> Simulador de Projetos</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna Contato Direto -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Canais Diretos</h4>
+          <div class="footer-contact-block">
+            <p><i class="fa-brands fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/5574991969827" target="_blank" rel="noopener noreferrer">+55 74 991969827</a></p>
+            <p><i class="fa-solid fa-envelope"></i> <strong>E-mail:</strong> <a href="mailto:eukaioluccas31@gmail.com">eukaioluccas31@gmail.com</a></p>
+            <p><i class="fa-solid fa-clock"></i> <strong>Atendimento:</strong> Seg - Sáb (Suporte Prioritário)</p>
+          </div>
+          <div class="footer-cta-box">
+            <a href="https://wa.me/5574991969827?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20ACsoft." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm btn-block">
+              <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra de Copyright e Atribuição Oficial -->
+      <div class="footer-bottom-bar">
+        <div class="copyright-text">
+          &copy; 2026 <strong>ACsoft</strong>. Todos os direitos reservados.
+        </div>
+        <!-- Assinatura solicitada pelo usuário: "Criado por: ACsoft - Alternative Creative Software Studios" -->
+        <div class="official-attribution-badge">
+          Criado por: <strong>ACsoft - Alternative Creative Software Studios</strong>
+        </div>
+        <div class="footer-scroll-top">
+          <a href="#hero" class="back-to-top" aria-label="Voltar ao início">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL INTERATIVO DOS FUNDADORES (REQUISITO FUNDAMENTAL) -->
+  <div class="modal-backdrop" id="foundersModal" aria-hidden="true" role="dialog">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Fechar Modal">&times;</button>
+      <div class="modal-header">
+        <div class="modal-icon-badge">
+          <img src="Logo ACsoft-png/03-icone-app.svg" alt="Ícone ACsoft" width="48" height="48">
+        </div>
+        <h3 class="modal-title">Proprietários da ACsoft Studios</h3>
+        <p class="modal-subtitle">Liderança, Inovação e Compromisso Direto</p>
+      </div>
+
+      <div class="modal-body">
+        <!-- O texto estritamente solicitado pelo usuário ao clicar nos nomes: -->
+        <div class="modal-highlight-box">
+          <span class="highlight-label">A empresa pertence a:</span>
+          <h2 class="modal-revealed-text">Kaio Lucas Almeida Reis, Júlia Almeida Reis</h2>
+          <p class="modal-names-original">
+            <strong>Júlia Almeida Costa (Júlia A.R)</strong> & <strong>Kaio Lucas Celestino Da Silva Reis (Kaio Lucas A.R)</strong>
+          </p>
+        </div>
+
+        <div class="modal-founders-dual-grid">
+          <div class="modal-founder-col">
+            <div class="m-avatar">
+              <img src="Logo ACsoft-png/07-avatar-redondo.svg" alt="Júlia Almeida Reis" width="64" height="64">
+            </div>
+            <h4>Júlia Almeida Reis</h4>
+            <span class="m-role">Co-Fundadora & Diretora Criativa</span>
+            <p>Especialista em design de interface, experiência do usuário, branding visual e harmonia estética.</p>
+          </div>
+
+          <div class="modal-founder-col">
+            <div class="m-avatar">
+              <img src="Logo ACsoft-png/03-icone-app.svg" alt="Kaio Lucas Almeida Reis" width="64" height="64">
+            </div>
+            <h4>Kaio Lucas Almeida Reis</h4>
+            <span class="m-role">Co-Fundador & Arquiteto Chefe</span>
+            <p>Especialista em desenvolvimento de apps, arquitetura em nuvem, segurança cibernética e criação de jogos.</p>
+          </div>
+        </div>
+
+        <div class="modal-contact-row">
+          <a href="https://wa.me/5574991969827?text=Ol%C3%A1%2C%20Kaio%20e%20J%C3%BAlia!%20Gostaria%20de%20iniciar%20um%20projeto%20com%20a%20ACsoft." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+            <i class="fa-brands fa-whatsapp"></i> Falar com Kaio & Júlia no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST DE NOTIFICAÇÃO (COPIADO COM SUCESSO) -->
+  <div class="toast-notification" id="siteToast" role="alert" aria-live="polite">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMessage">Texto copiado para a área de transferência!</span>
+  </div>
+
+  <!-- SCRIPT PRINCIPAL -->
+  <script src="script.js"></script>
+</body>
+</html>
