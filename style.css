@@ -3121,3 +3121,74 @@ section {
     display: none !important;
   }
 }
+
+
+/* ==========================================================================
+   OTIMIZAÇÕES AUTOMÁTICAS POR TIPO DE DISPOSITIVO (MOBILE / TABLET / TOUCH)
+   ========================================================================== */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Remove atraso de 300ms no toque e brilho azul padrão no Android/iOS */
+button, a, input, select, textarea, label {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* Altura real em navegadores mobile usando --vh */
+html.device-mobile .hero-section,
+html.device-tablet .hero-section {
+  min-height: calc(var(--vh, 1vh) * 100 - var(--header-height));
+}
+
+/* Safe areas para iPhones com Notch / Dynamic Island e barra de gestos */
+html.os-ios .site-header,
+html.device-mobile .site-header {
+  padding-left: env(safe-area-inset-left, 0);
+  padding-right: env(safe-area-inset-right, 0);
+}
+
+html.os-ios input,
+html.os-ios select,
+html.os-ios textarea {
+  font-size: 16px !important; /* Evita zoom automático do Safari ao focar em campos */
+}
+
+/* Áreas de toque confortáveis e modal rolável em telas pequenas */
+html.is-touch .btn,
+html.is-touch .filter-tab-btn,
+html.is-touch .faq-question-btn,
+html.is-touch .founder-name-button {
+  min-height: 44px;
+}
+
+html.device-mobile .modal-window {
+  max-height: calc(var(--vh, 1vh) * 88);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Evita que cards fiquem "presos" no estado hover após toque no celular */
+html.is-touch .service-card:hover,
+html.is-touch .pillar-card:hover,
+html.is-touch .founder-card:hover,
+html.is-touch .gallery-item-card:hover,
+html.is-touch .equation-box:hover {
+  transform: none;
+}
+
+/* Ajustes finos no header para celulares estreitos */
+@media (max-width: 480px) {
+  .header-actions .btn-outline-glow .btn-text {
+    display: none;
+  }
+  .header-actions .btn-outline-glow {
+    padding: 0.55rem 0.75rem;
+  }
+  .top-announcement {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.5rem;
+  }
+}

@@ -6,6 +6,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initDeviceDetection();
   initNavbar();
   initFoundersInteractive();
   initColorPaletteCopier();
@@ -15,6 +16,49 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   initScrollAnimations();
 });
+
+/* ==========================================================================
+   0. DETECÇÃO AUTOMÁTICA DE DISPOSITIVO, SO E VIEWPORT REAL (--vh)
+   ========================================================================== */
+function initDeviceDetection() {
+  const root = document.documentElement;
+
+  function detect() {
+    const ua = navigator.userAgent || navigator.vendor || window.opera || '';
+    const width = window.innerWidth;
+    const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+    // Detectar Sistema Operacional
+    const isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    const isAndroid = /Android/i.test(ua);
+
+    // Detectar Tipo de Dispositivo
+    let deviceType = 'desktop';
+    if (/iPad|Tablet|PlayBook|Silk/i.test(ua) || (isAndroid && !/Mobile/i.test(ua)) || (isTouch && width >= 600 && width <= 1100)) {
+      deviceType = 'tablet';
+    } else if (/Mobi|Android|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua) || (isTouch && width < 600)) {
+      deviceType = 'mobile';
+    }
+
+    // Limpar classes anteriores e aplicar atuais
+    root.classList.remove('device-mobile', 'device-tablet', 'device-desktop', 'os-ios', 'os-android', 'os-desktop', 'is-touch', 'no-touch');
+    root.classList.add(`device-${deviceType}`);
+    root.classList.add(isIOS ? 'os-ios' : isAndroid ? 'os-android' : 'os-desktop');
+    root.classList.add(isTouch ? 'is-touch' : 'no-touch');
+
+    root.setAttribute('data-device', deviceType);
+
+    // Corrigir altura real de viewport em celulares (evita corte pela barra de endereços)
+    const vh = window.innerHeight * 0.01;
+    root.style.setProperty('--vh', `${vh}px`);
+
+    window.ACsoftDevice = { type: deviceType, isIOS, isAndroid, isTouch, width };
+  }
+
+  detect();
+  window.addEventListener('resize', detect, { passive: true });
+  window.addEventListener('orientationchange', () => setTimeout(detect, 150), { passive: true });
+}
 
 /* ==========================================================================
    1. NAVEGAÇÃO & HEADER SCROLL
