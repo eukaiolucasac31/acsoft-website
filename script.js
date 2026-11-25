@@ -216,6 +216,9 @@ function initProjectCalculator() {
   const resProjectName = document.getElementById('resProjectName');
   const resTimelineEst = document.getElementById('resTimelineEst');
   const btnSendWhatsapp = document.getElementById('btnSendQuoteWhatsapp');
+  const standardGrid = document.getElementById('standardFeaturesGrid');
+  const gameGrid = document.getElementById('gameFeaturesGrid');
+  const featuresLabel = document.getElementById('calcFeaturesLabel');
 
   const projectTypeLabels = {
     app: 'Aplicativo Mobile (iOS & Android)',
@@ -230,7 +233,13 @@ function initProjectCalculator() {
     banco: 'Banco de Dados & API na Nuvem',
     pagamento: 'Gateway de Pagamentos / Pix',
     hospedagem: 'Hospedagem & Blindagem de Segurança',
-    painel: 'Painel Administrativo Web (Admin)'
+    painel: 'Painel Administrativo Web (Admin)',
+    visuais: 'Visuais & Direção de Arte (2D/3D)',
+    sonoros: 'Efeitos Sonoros & Trilha Original (SFX/OST)',
+    linguagem: 'Linguagem & Engine (Unity, Godot, Unreal ou Web)',
+    mecanicas: 'Mecânicas, Física & Level Design',
+    multiplayer: 'Multiplayer, Rankings & Cloud Save',
+    plataformas: 'Publicação Multiplataforma (Mobile/PC/Web)'
   };
 
   const urgencyLabels = {
@@ -239,9 +248,27 @@ function initProjectCalculator() {
     expresso: 'Lançamento Prioritário (Imediato)'
   };
 
+  function getActiveFeatures(selectedType) {
+    const isGame = selectedType === 'jogo';
+    const inputName = isGame ? 'gameFeature' : 'feature';
+    return Array.from(form.querySelectorAll(`input[name="${inputName}"]:checked`)).map(cb => cb.value);
+  }
+
   function updateEstimate() {
     const selectedType = form.querySelector('input[name="projectType"]:checked')?.value || 'app';
-    const checkedFeatures = Array.from(form.querySelectorAll('input[name="feature"]:checked')).map(cb => cb.value);
+    const isGame = selectedType === 'jogo';
+
+    if (standardGrid && gameGrid) {
+      standardGrid.style.display = isGame ? 'none' : 'grid';
+      gameGrid.style.display = isGame ? 'grid' : 'none';
+    }
+    if (featuresLabel) {
+      featuresLabel.textContent = isGame
+        ? '2. Quais elementos seu jogo precisará?'
+        : '2. Quais recursos seu projeto precisará?';
+    }
+
+    const checkedFeatures = getActiveFeatures(selectedType);
     const selectedUrgency = form.querySelector('input[name="urgency"]:checked')?.value || 'normal';
 
     const typeTitle = projectTypeLabels[selectedType] || 'Projeto Personalizado';
@@ -281,7 +308,7 @@ function initProjectCalculator() {
   if (btnSendWhatsapp) {
     btnSendWhatsapp.addEventListener('click', () => {
       const selectedType = form.querySelector('input[name="projectType"]:checked')?.value || 'app';
-      const checkedFeatures = Array.from(form.querySelectorAll('input[name="feature"]:checked')).map(cb => featureLabels[cb.value] || cb.value);
+      const checkedFeatures = getActiveFeatures(selectedType).map(val => featureLabels[val] || val);
       const selectedUrgency = form.querySelector('input[name="urgency"]:checked')?.value || 'normal';
 
       const typeTitle = projectTypeLabels[selectedType] || 'Projeto';

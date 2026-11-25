@@ -132,11 +132,11 @@
           <div class="hero-founders-strip animate-fade-in delay-4">
             <span class="strip-label">Liderança & Criação:</span>
             <div class="strip-founders">
-              <button class="founder-trigger-inline" data-founder="julia" title="Clique para ver os fundadores">
+              <button class="founder-trigger-inline" data-founder="julia">
                 <i class="fa-solid fa-circle-user"></i> Júlia Almeida Costa (Júlia A.R)
               </button>
               <span class="divider">&</span>
-              <button class="founder-trigger-inline" data-founder="kaio" title="Clique para ver os fundadores">
+              <button class="founder-trigger-inline" data-founder="kaio">
                 <i class="fa-solid fa-code"></i> Kaio Lucas Celestino Da Silva Reis (Kaio Lucas A.R)
               </button>
             </div>
@@ -589,23 +589,18 @@
           <p class="section-subtitle">
             A empresa pertence a profissionais dedicados que unem criatividade apurada e sólida engenharia de software para construir soluções de impacto.
           </p>
-          <div class="interactive-instruction-banner">
-            <i class="fa-solid fa-hand-pointer pulse-icon"></i>
-            <span><strong>Interaja:</strong> Clique no nome de <strong>Júlia Almeida R</strong> ou <strong>Kaio Lucas A.R</strong> para revelar os detalhes dos fundadores!</span>
-          </div>
         </div>
 
-        <!-- Banner com a Revelação Solicitada pelo Usuário -->
+        <!-- Banner com os Proprietários -->
         <div class="founders-reveal-card" id="foundersRevealBox">
           <div class="reveal-badge">
             <i class="fa-solid fa-award"></i>
             <span>Proprietários & Direção Executiva ACsoft</span>
           </div>
-          <!-- O texto exato exigido: "Kaio Lucas Almeida Reis, Júlia Almeida Reis" -->
           <div class="revealed-names-highlight" id="revealedNamesText">
-            <span class="name-chip chip-kaio">Kaio Lucas Almeida Reis</span>
+            <span class="name-chip chip-kaio">Kaio Lucas Celestino Da Silva Reis</span>
             <span class="name-ampersand">&</span>
-            <span class="name-chip chip-julia">Júlia Almeida Reis</span>
+            <span class="name-chip chip-julia">Júlia Almeida Costa</span>
           </div>
           <p class="reveal-subtext">
             "Unindo a paixão por design intuitivo e arquitetura robusta de sistemas, lideramos a ACsoft Studios com transparência, inovação constante e proximidade com cada parceiro de negócios."
@@ -622,11 +617,9 @@
               <span class="founder-status-badge">Co-Fundadora</span>
             </div>
             <div class="founder-info">
-              <!-- Requisito interativo: clicar no nome -->
-              <button class="founder-name-button" id="btnJuliaName" title="Clique para exibir os fundadores completos">
+              <button class="founder-name-button" id="btnJuliaName">
                 <span class="primary-name">Júlia Almeida Costa</span>
                 <span class="alias-name">(Júlia A.R)</span>
-                <i class="fa-solid fa-arrow-pointer click-hint"></i>
               </button>
               <div class="founder-title">Diretoria Criativa & Experiência do Usuário (UX/UI)</div>
               <p class="founder-bio">
@@ -655,11 +648,9 @@
               <span class="founder-status-badge">Co-Fundador</span>
             </div>
             <div class="founder-info">
-              <!-- Requisito interativo: clicar no nome -->
-              <button class="founder-name-button" id="btnKaioName" title="Clique para exibir os fundadores completos">
+              <button class="founder-name-button" id="btnKaioName">
                 <span class="primary-name">Kaio Lucas Celestino Da Silva Reis</span>
                 <span class="alias-name">(Kaio Lucas A.R)</span>
-                <i class="fa-solid fa-arrow-pointer click-hint"></i>
               </button>
               <div class="founder-title">Arquiteto de Software & Engenharia de Sistemas</div>
               <p class="founder-bio">
@@ -749,8 +740,10 @@
 
             <!-- Passo 2: Funcionalidades Desejadas -->
             <div class="calc-step">
-              <label class="calc-step-label">2. Quais recursos seu projeto precisará?</label>
-              <div class="calc-features-grid">
+              <label class="calc-step-label" id="calcFeaturesLabel">2. Quais recursos seu projeto precisará?</label>
+
+              <!-- Recursos Padrão (Apps, Sites, Ferramentas) -->
+              <div class="calc-features-grid" id="standardFeaturesGrid">
                 <label class="feature-checkbox-card">
                   <input type="checkbox" name="feature" value="design" checked>
                   <span class="cb-custom"></span>
@@ -802,6 +795,63 @@
                   <div class="cb-label">
                     <strong>Painel Administrativo Web (Admin)</strong>
                     <span>Para você gerenciar conteúdos e usuários</span>
+                  </div>
+                </label>
+              </div>
+
+              <!-- Recursos Específicos para Jogos (Game Studio) -->
+              <div class="calc-features-grid" id="gameFeaturesGrid" style="display: none;">
+                <label class="feature-checkbox-card">
+                  <input type="checkbox" name="gameFeature" value="visuais" checked>
+                  <span class="cb-custom"></span>
+                  <div class="cb-label">
+                    <strong>Visuais & Direção de Arte (2D/3D)</strong>
+                    <span>Sprites, modelagem 3D, cenários, iluminação e VFX</span>
+                  </div>
+                </label>
+
+                <label class="feature-checkbox-card">
+                  <input type="checkbox" name="gameFeature" value="sonoros" checked>
+                  <span class="cb-custom"></span>
+                  <div class="cb-label">
+                    <strong>Efeitos Sonoros & Trilha Original (SFX/OST)</strong>
+                    <span>Áudio imersivo, música tema e feedback de ações</span>
+                  </div>
+                </label>
+
+                <label class="feature-checkbox-card">
+                  <input type="checkbox" name="gameFeature" value="linguagem" checked>
+                  <span class="cb-custom"></span>
+                  <div class="cb-label">
+                    <strong>Linguagem & Engine (Unity, Godot, Unreal ou Web)</strong>
+                    <span>C#, GDScript, C++ ou HTML5/JavaScript sob medida</span>
+                  </div>
+                </label>
+
+                <label class="feature-checkbox-card">
+                  <input type="checkbox" name="gameFeature" value="mecanicas">
+                  <span class="cb-custom"></span>
+                  <div class="cb-label">
+                    <strong>Mecânicas, Física & Level Design</strong>
+                    <span>Sistemas de combate, fases, progressão e IA</span>
+                  </div>
+                </label>
+
+                <label class="feature-checkbox-card">
+                  <input type="checkbox" name="gameFeature" value="multiplayer">
+                  <span class="cb-custom"></span>
+                  <div class="cb-label">
+                    <strong>Multiplayer, Rankings & Cloud Save</strong>
+                    <span>Salas online em tempo real e salvamento na nuvem</span>
+                  </div>
+                </label>
+
+                <label class="feature-checkbox-card">
+                  <input type="checkbox" name="gameFeature" value="plataformas">
+                  <span class="cb-custom"></span>
+                  <div class="cb-label">
+                    <strong>Publicação Multiplataforma</strong>
+                    <span>Android, iOS, PC (Steam/Desktop) e WebGL</span>
                   </div>
                 </label>
               </div>
