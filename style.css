@@ -77,6 +77,10 @@ html {
   font-size: 16px;
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  overflow-x: clip;
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
 }
 
 body {
@@ -84,11 +88,21 @@ body {
   background-color: var(--bg-deep);
   color: var(--text-primary);
   line-height: 1.65;
+  overflow-x: clip;
   overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+main {
+  overflow-x: clip;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
 }
 
 /* Barra de rolagem estilizada */
@@ -2931,9 +2945,23 @@ section {
     justify-content: center;
   }
 
+  .altc-equation-card {
+    padding: 1.5rem 1rem;
+    overflow: hidden;
+  }
+
   .equation-row {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .equation-box {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 1.6rem 1.2rem;
   }
 
   .equation-operator {
@@ -2943,6 +2971,29 @@ section {
 
   .eq-pill {
     align-self: center;
+  }
+
+  .hero-card-stack {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .floating-badge {
+    position: static !important;
+    margin: 0.8rem auto 0 !important;
+    transform: none !important;
+    animation: none !important;
+    width: 100%;
+    max-width: 290px;
+    box-sizing: border-box;
+  }
+
+  .badge-top-right, .badge-bottom-left {
+    position: static !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
   }
 
   .web-pillars-grid {
@@ -2969,10 +3020,40 @@ section {
 /* --- CELULARES & SMARTPHONES (ANDROID, IOS / IPHONES ATÉ 768px) --- */
 @media (max-width: 768px) {
   :root {
-    --header-height: 72px;
+    --header-height: 70px;
   }
 
-  /* Menu Mobile Drawer */
+  /* Impede qualquer transbordamento horizontal */
+  html, body, main {
+    overflow-x: clip !important;
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+    width: 100% !important;
+  }
+
+  /* Ajuste no cabeçalho */
+  .brand-logo .brand-tagline {
+    display: none;
+  }
+
+  .brand-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand-name {
+    font-size: 1.4rem;
+  }
+
+  .header-actions .btn-outline-glow .btn-text {
+    display: none;
+  }
+
+  .header-actions .btn-outline-glow {
+    padding: 0.5rem 0.75rem;
+  }
+
+  /* Menu Mobile Drawer Seguro */
   .mobile-toggle {
     display: flex;
   }
@@ -2982,7 +3063,9 @@ section {
     top: var(--header-height);
     left: 0;
     right: 0;
-    bottom: 0;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    height: calc(var(--vh, 1vh) * 100 - var(--header-height));
     background: rgba(35, 10, 22, 0.98);
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
@@ -2991,14 +3074,20 @@ section {
     padding: 2rem 1.5rem;
     gap: 1.2rem;
     transform: translateX(100%);
-    transition: transform var(--transition-normal);
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform var(--transition-normal), visibility var(--transition-normal);
     overflow-y: auto;
+    overflow-x: hidden;
     z-index: 101;
     border-top: 1px solid var(--border-subtle);
+    box-sizing: border-box;
   }
 
   .nav-menu.active {
     transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .nav-link {
@@ -3020,6 +3109,19 @@ section {
     margin-top: 0.5rem;
   }
 
+  /* Botões responsivos que nunca estouram a tela */
+  .btn {
+    white-space: normal !important;
+    word-break: break-word;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .btn-lg {
+    padding: 0.85rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
   /* Grid dos Serviços em 1 Coluna */
   .services-grid {
     grid-template-columns: 1fr;
@@ -3033,11 +3135,46 @@ section {
     grid-template-columns: 1fr;
   }
 
-  .contact-card-wrapper {
-    grid-template-columns: 1fr;
+  /* Nomes dos proprietários adaptáveis ao celular */
+  .founders-reveal-card {
+    padding: 1.8rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
   }
 
-  .contact-info-column {
+  .revealed-names-highlight {
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 100%;
+  }
+
+  .name-chip {
+    width: 100%;
+    max-width: 100%;
+    font-size: 1.05rem !important;
+    padding: 0.6rem 0.8rem !important;
+    word-break: break-word;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .name-ampersand {
+    font-size: 1.3rem;
+    margin: -0.2rem 0;
+  }
+
+  .contact-card-wrapper {
+    grid-template-columns: 1fr;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .contact-info-column,
+  .contact-form-column {
+    padding: 1.6rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
     border-right: none;
     border-bottom: 1px solid rgba(242, 155, 190, 0.12);
   }
@@ -3049,6 +3186,7 @@ section {
   .metrics-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.2rem;
+    padding: 1.4rem 1rem;
   }
 
   .metric-item:nth-child(2)::after {
@@ -3064,8 +3202,33 @@ section {
     gap: 2.2rem;
   }
 
+  /* Calculadora */
+  .calculator-box {
+    padding: 1.5rem 1rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .calc-options-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .calc-features-grid {
     grid-template-columns: 1fr;
+  }
+
+  .feature-checkbox-card {
+    padding: 0.75rem 0.85rem;
+  }
+
+  .cb-label strong {
+    font-size: 0.82rem;
+  }
+
+  .cb-label span {
+    font-size: 0.7rem;
   }
 
   .urgency-options {
@@ -3075,19 +3238,40 @@ section {
   .calc-result-box {
     flex-direction: column;
     text-align: center;
+    padding: 1.2rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #btnSendQuoteWhatsapp {
+    width: 100%;
+    font-size: 0.92rem;
+    padding: 0.85rem 1rem;
+    white-space: normal !important;
   }
 
   .modal-founders-dual-grid {
     grid-template-columns: 1fr;
   }
 
+  .modal-window {
+    padding: 1.5rem 1rem;
+    max-width: 95vw;
+    box-sizing: border-box;
+  }
+
+  .modal-revealed-text {
+    font-size: 1.2rem !important;
+    word-break: break-word;
+  }
+
   .floating-badge {
-    position: static;
-    margin: 0.8rem auto 0;
+    position: static !important;
+    margin: 0.8rem auto 0 !important;
   }
 
   .badge-top-right, .badge-bottom-left {
-    position: static;
+    position: static !important;
   }
 
   .toast-notification {
@@ -3120,6 +3304,11 @@ section {
   .metric-item::after {
     display: none !important;
   }
+
+  .top-announcement {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.5rem;
+  }
 }
 
 
@@ -3127,14 +3316,15 @@ section {
    OTIMIZAÇÕES AUTOMÁTICAS POR TIPO DE DISPOSITIVO (MOBILE / TABLET / TOUCH)
    ========================================================================== */
 html, body {
-  overflow-x: hidden;
-  max-width: 100%;
+  overflow-x: clip !important;
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  width: 100% !important;
 }
 
-/* Remove atraso de 300ms no toque e brilho azul padrão no Android/iOS */
-button, a, input, select, textarea, label {
+/* Remove atraso no toque e brilho azul padrão no Android/iOS */
+button, a, input, select, textarea {
   -webkit-tap-highlight-color: transparent;
-  touch-action: manipulation;
 }
 
 /* Altura real em navegadores mobile usando --vh */
@@ -3177,18 +3367,4 @@ html.is-touch .founder-card:hover,
 html.is-touch .gallery-item-card:hover,
 html.is-touch .equation-box:hover {
   transform: none;
-}
-
-/* Ajustes finos no header para celulares estreitos */
-@media (max-width: 480px) {
-  .header-actions .btn-outline-glow .btn-text {
-    display: none;
-  }
-  .header-actions .btn-outline-glow {
-    padding: 0.55rem 0.75rem;
-  }
-  .top-announcement {
-    font-size: 0.75rem;
-    padding: 0.4rem 0.5rem;
-  }
 }
